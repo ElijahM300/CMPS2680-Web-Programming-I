@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Homework 4 Javascript Intro</title>
+    </head>
+    <body>
+        <h1 id = "myid">Welcome!</h1>
+        <p style = "font-family: Verdana, Geneva, Tahoma, sans-serif"><a href = "index.html">Back to home</a></p>
+    </body>
+    <script>
+        alert("Hello and welcome to my webpage!");
+        var name = prompt("What's your name?");
+        var elem = document.getElementById("myid");
+        elem.innerHTML = name;
+        var p = document.createElement("p");
+        p.innerHTML = "Web programming is so cool!"
+        document.body.appendChild(p);
+    </script>
+</html>

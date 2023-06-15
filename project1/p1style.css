@@ -1,0 +1,90 @@
+.home{
+    background-color: lightgrey;
+    background-image: url('../DFLogo.png');
+    background-size: cover;
+}
+.page1{
+    background-color: lightgray;
+}
+.page2{
+    background-color: lightyellow;
+}
+.page3{
+   background-color: rgb(255, 136, 0);
+}
+#header{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    height: 100px;
+    width: 650px;
+    background-color: crimson;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    border-radius: 25px;
+}
+#navigation{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+}
+#content{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    color: goldenrod;
+}
+.pageLink{
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+a:link{
+    text-decoration: underline;
+    color: darkorchid;
+}
+a:visited{
+    color: red;
+}
+a:hover{
+    color: burlywood;
+}
+a:active{
+    color: gold;
+}
+.listline{
+    height: 2px;
+    width: 650px;
+    background-color: goldenrod;
+}
+.vid{
+    margin-left: 300px;
+}
+table{
+    margin: 10px;
+    font-size: 20px;
+    color: red;
+    border-collapse: collapse;
+    outline-style: ridge;
+}
+th, td{
+    padding: 10px;
+    border: 2px solid rgb(54, 95, 170);
+    text-align: left;
+}
+tr:nth-child(even){
+    background-color: lightgray;
+}
+.preds{
+    color: black;
+}
+.predline{
+    height: 2px;
+    width: 500px;
+    background-color: black;
+}
+.winners{
+    float: left;
+}
+.losers{
+    float: right;
+}

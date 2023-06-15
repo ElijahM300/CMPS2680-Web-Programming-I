@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>A Nerd's Blog</title>
+        <link rel = "stylesheet" href = "project3style.css">
+        <style>
+            #sortable { list-style-type: none; margin-left: 585px; padding: 0; width: 30%;}
+            #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; 
+            background-color: black; color: white;}
+            #sortable li span { position: absolute; margin-left: -1.3em;}
+        </style>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+        $( function() {
+            $( "#sortable" ).sortable();
+            $( "#sortable" ).disableSelection();
+        } );
+        </script>
+    </head>
+    <body style = "background-color: gray;" onload = "initialize()">
+        <div class = "header">
+            <div class = "title">
+                <h1>A Nerd's Blog</h1> 
+            </div>
+            <a href = "home.html" style = "padding-left: 464px;">Home</a>
+            <a href = "starwars.html" style = "padding-left: 10px;">Star Wars</a>
+            <a href = "pokemon.html" style = "padding-left: 10px;">Pokemon</a>
+            <a href = "videogames.html" style = "padding-left: 10px;">Video Games</a>
+            <a href = "anime.html" style = "padding-left: 10px;">Anime</a>
+        </div>
+        <div>
+            <img src = "starwarslogo.jpg" style = "margin-left: 600px; width: 375px; height: 175px;">
+        </div>
+        <div>
+            <p class = "p">
+                Hello everyone! In this post I just wanted to share with you my ranking for all of the Star Wars movies<br>
+                and give some short thoughts on each movie and will only include the episodic films but will provide the two<br>
+                spinoff movies below where you can create your ranking. So, to begin, let's start at the #1 spot which for me<br>
+                is EpisodeV: The Empire Strikes Back. This movie is I think the best Star Wars film because of how much it <br>
+                expands upon Episode IV and the story and the settings in this movie is unbeatable compared to the other films.<br>
+                At the #2 spot for me is Episode VI: Return of the Jedi. Yes, even with the Ewoks in this movie along with the<br>
+                slow start at Jabba's Palace this movie is #2 for me since as a kid I watched this one a lot so it has a lot of<br>
+                nostalgia for me along with how great the end battle between Luke and Vader is combined with the Battle of Endor<br>
+                makes this movie still very good for me. At the #3 spot I have Episode III: Revenge of the Sith. Even though the<br>
+                prequels get a bad rep, Episode III is the one that is very good out of the three because of the darker tone and<br>
+                how well the execution is performed with connecting it to the original trilogy. The lightsaber fight at the end of<br>
+                the movie is by far one of the best in the series and where the bad guys win for once. At the #4 spot is the movie<br>
+                that started it all, Episode IV: A New Hope. What's there to say about this movie that hasn't already been said? This<br>
+                movie is simple, fun, and a classic that was absolutely revolutionary for it's time. It introduced people to the Star<br>
+                Wars universe for the first time and the story is creative and very good, even if it's simple.<br> 
+                <br>
+                At #5 is the ending of the Skywalker Saga, Episode IX: The Rise of Skywalker. While this movie marked the end of the<br> 
+                Disney trilogy, which now is getting the treatment the prequels were getting when they first released, this movie I<br> 
+                think is the best out of the three because of how much ground the movie covers with the amount of time it's given and<br> 
+                the movie does feel like a love letter to Star Wars fans because of how much fan service is in it. This movie is not at<br> 
+                all perfect and has its problems but it's the most enjoyable one out of the three for me. At #6 is the start of the<br> 
+                Disney trilogy, Episode VII: The Force Awakens. Even though this movie shares a lot of similar elements with A New Hope,<br> 
+                it executes itself as a soft reboot well enough to make this a fun movie that introduced people back into Star Wars and<br> 
+                introduced new characters and ideas. At #7 is what's probably the most hated film now out of the nine, Episode VIII: The<br> 
+                Last Jedi. Yes, this film has some major glaring problems that make this one not as enjoyable for me with things like<br> 
+                Luke's character and the plot itself however, there are some enjoyable things that you can still take away from this<br> 
+                movie such as the throne room fight scene and the Battle of Crait. At the #8 spot is the start of the prequel trilogy,<br> 
+                Episode I: The Phantom Menace. This movie kicked off the prequel trilogy but definitely not with a bang. The only notable<br> 
+                qualities that this movie has is the podracing scene and the lightsaber duel at the end with Darth Maul. Everything else<br> 
+                in this movie feels pointless and that nothing and that nothing really happens. It gives you the feeling that Episode II<br> 
+                really should have been Episode I. And last in my ranking is Episode II: Attack of the Clones. Even with some enjoyable<br> 
+                moments, this movie to me just feels boring since half of it feels like your with Anakin and Padme talking to each other<br> 
+                with not the best dialogue. The things that save the movie for me though is the chase with the bounty hunter near the<br> 
+                beginning of the movie, the fight between Jango and Obi-Wan, the gladiator arena scene with all of the Jedi along with<br> 
+                the Battle of Geonosis, and the lightsaber fights at the end of the movie aren't too shabby either. Well, that's it for<br> 
+                my ranking but feel free to make your own ranking below and thank you for reading this!<br> 
+            </p>
+        </div>
+        <br>
+        <br>
+        <h1 style = "text-decoration: underline; margin-left: 650px;">Make Your Own Ranking</h1>
+        <ul id="sortable">
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Episode I: The Phantom Menace</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Episode II: Attack of the Clones</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Episode III: Revenge of the Sith</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Solo: A Star Wars Story</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Rogue One: A Star Wars Story</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Episode IV: A New Hope</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Episode V: The Empire Strikes Back</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Episode VI: Return of the Jedi</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Episode VII: The Force Awakens</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Episode VIII: The Last Jedi</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Episode IX: The Rise of Skywalker</li>
+          </ul>
+    </body>
+</html>

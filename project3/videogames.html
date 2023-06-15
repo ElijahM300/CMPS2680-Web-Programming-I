@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>A Nerd's Blog</title>
+        <link rel = "stylesheet" href = "project3style.css">
+    </head>
+    <body style = "background-color: gray;" onload = "checkForInput()">
+        <div class = "header">
+            <div class = "title">
+                <h1>A Nerd's Blog</h1> 
+            </div>
+            <a href = "home.html" style = "padding-left: 464px;">Home</a>
+            <a href = "starwars.html" style = "padding-left: 10px;">Star Wars</a>
+            <a href = "pokemon.html" style = "padding-left: 10px;">Pokemon</a>
+            <a href = "videogames.html" style = "padding-left: 10px;">Video Games</a>
+            <a href = "anime.html" style = "padding-left: 10px;">Anime</a>
+        </div>
+        <div>
+            <img src = "mario.jpg" style = "margin-left: 600px; width: 400px; height: 200px;">
+        </div>
+        <div>
+            <p class = "p">
+                Hello all you gamers! In this post I wanted to talk about some of the games I've been playing recently<br>
+                and what my favorite game of all time is and why. So to start, the main games I've been playing recently<br>
+                are Dead By Daylight and Overwatch on my PS4 and Animal Crossing: New Horizons on my Switch. I don't play<br>
+                Overwatch as often as the other two right now but once the Winter Wonderland event for this year comes out<br>
+                I'll definitely be playing it a lot more than I am right now. My main focus right now is Dead By Daylight<br>
+                because I'm trying to finish what's called the Rift in this game which is just essentially a battle pass<br>
+                like what Fortnite has. The good thing though is that there's only 70 tiers and I'm on tier 39 of the Rift<br> 
+                with 25 days left to go so I should be able to complete it. For those of you that don't know what Dead By<br>
+                Daylight is, it's an asymmetrical horror game where it's one killer against four survivors and the goal for<br>
+                the killer is to, well, kill everyone and for the survivors, you need to repair five generators that power<br>
+                up exit gates so that you can escape. I think the game is very fun and cool since you have classic licensed<br>
+                killers in this game like Michael Myers or Ghostface and even the Demogorgon from Stranger Things is a killer<br>
+                in this game. Moving on to Animal Crossing, winter is now on people's islands and with it comes a lot of new<br>
+                DIY recipes for you to make so you can decorate your island with plenty of Christmas stuff. Each day you can<br>
+                make a snowman and if you make them right, they'll give you a DIY recipe to craft and a large snowflake which<br>
+                is essential for the recipes that snowmen can give you. What's known as Toy Day is on Christmas Eve and you have<br>
+                to basically be Santa and deliver toys and gifts to all of your villagers and in return you'll get a special<br>
+                item.<br> 
+                <br>
+                So, now that what I'm playing now is out of the way, I wanted to talk about what my favorite game of all<br>
+                time is and why it's my favorite. I've played a numerous amount of games from when I started to play video games<br>
+                so picking my favorite was a tough choice but for me, I would have to go with Paper Mario: The Thousand Year Door.<br>
+                Simply put, I think this game is one of the best games ever made because for a Mario game, the plot is surprisingly<br>
+                dark and very interesting which is a nice change from what you would usually be used to in a Mario game. Also, the<br>
+                game is an action/adventure rpg so turn-based battling is the main focus for combat. The world, the characters, and<br>
+                how unique and original this game is makes this game a very good time all around and I would highly, HIGHLY, recommend<br>
+                this game to anyone who hasn't played it before and trust me, you won't be disappointed with it. Well, that's all for<br>
+                this post so thank you for reading this and before I end this post, below you will find trivia for basic video game<br>
+                knowledge with five questions so have fun with that and good luck!<br>
+            </p>
+        </div>
+        <h1 style = "margin-left: 700px; text-decoration: underline;">Take the Trivia!</h1>  
+        <script>
+            const enterKey = 13;
+            function question1(){
+                let answer1 = document.getElementById("q1").value;
+                let correct = false;
+                if(answer1 == "star" || answer1 == "super star"){
+                    correct = true;
+                }
+                return check1(correct);
+            }
+            function question2(){
+                let answer2 = document.getElementById("q2").value;
+                let correct = false;
+                if(answer2 == "32"){
+                    correct = true;
+                }
+                return check2(correct);
+            }
+            function question3(){
+                let answer3 = document.getElementById("q3").value;
+                let correct = false;
+                if(answer3 == "151"){
+                    correct = true;
+                }
+                return check3(correct);
+            }
+            function question4(){
+                let answer4 = document.getElementById("q4").value;
+                let correct = false;
+                if(answer4 == "Ornstein and Smough" || answer4 == "ornstein and smough"){
+                    correct = true;
+                }
+                return check4(correct);
+            }
+            function question5(){
+                let answer5 = document.getElementById("q5").value;
+                let correct = false;
+                if(answer5 == "3"){
+                    correct = true;
+                }
+                return check5(correct);
+            }
+            function check1(feedback){
+                if(feedback){
+                    document.getElementById("fb1").innerHTML = "Correct!"
+                }
+                else{
+                    document.getElementById("fb1").innerHTML = "Wrong"
+                }
+            }
+            function check2(feedback){
+                if(feedback){
+                    document.getElementById("fb2").innerHTML = "Correct!"
+                }
+                else{
+                    document.getElementById("fb2").innerHTML = "Wrong"
+                }
+            }
+            function check3(feedback){
+                if(feedback){
+                    document.getElementById("fb3").innerHTML = "Correct!"
+                }
+                else{
+                    document.getElementById("fb3").innerHTML = "Wrong"
+                }
+            }
+            function check4(feedback){
+                if(feedback){
+                    document.getElementById("fb4").innerHTML = "Correct!"
+                }
+                else{
+                    document.getElementById("fb4").innerHTML = "Wrong"
+                }
+            }
+            function check5(feedback){
+                if(feedback){
+                    document.getElementById("fb5").innerHTML = "Correct!"
+                }
+                else{
+                    document.getElementById("fb5").innerHTML = "Wrong"
+                }
+            }
+            function checkForInput(){
+                let input1 = document.getElementById("q1");
+                let input2 = document.getElementById("q2");
+                let input3 = document.getElementById("q3");
+                let input4 = document.getElementById("q4");
+                let input5 = document.getElementById("q5");
+                input1.addEventListener("keyup", function(event){
+                    if(event.keyCode == enterKey){
+                        question1();
+                    }
+                });
+                input2.addEventListener("keyup", function(event){
+                    if(event.keyCode == enterKey){
+                        question2();
+                    }
+                });
+                input3.addEventListener("keyup", function(event){
+                    if(event.keyCode == enterKey){
+                        question3();
+                    }
+                });
+                input4.addEventListener("keyup", function(event){
+                    if(event.keyCode == enterKey){
+                        question4();
+                    }
+                });
+                input5.addEventListener("keyup", function(event){
+                    if(event.keyCode == enterKey){
+                        question5();
+                    }
+                });
+            }
+        </script>
+        <div style = "font-size: 18px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+        'Lucida Sans', Arial, sans-serif; margin-left: 450px">
+            <p>
+                1. What is the name of the power-up in the Mario series that makes Mario invincible?
+            </p>
+            <input type = "text" id = "q1">
+            <button onclick = "question1()">Submit</button>
+            <p id = "fb1"></p>
+            <p>
+                2. In Overwatch, how many heroes are there?
+            </p>
+            <input type = "text" id = "q2">
+            <button onclick = "question2()">Submit</button>
+            <p id = "fb2"></p>
+            <p>
+                3. How many Pokemon were there in Generation 1?
+            </p>
+            <input type = "text" id = "q3">
+            <button onclick = "question3()">Submit</button>
+            <p id = "fb3"></p>
+            <p>
+                4. In the first Dark Souls game, which boss/bosses do you fight at the end of Anor Londo?
+            </p>
+            <input type = "text" id = "q4">
+            <button onclick = "question4()">Submit</button>
+            <p id = "fb4"></p>
+            <p>
+                5. In Animal Crossing: New Horizons, how many stars does your island need before you can terraform?
+            </p>
+            <input type = "text" id = "q5">
+            <button onclick = "question5()">Submit</button>
+            <p id = "fb5"></p>
+        </div>
+    </body>
+</html>

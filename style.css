@@ -1,0 +1,39 @@
+body{
+    background-color: lightgray;
+}
+p, h1, h2, table{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a:link{
+    color: gold;
+}
+a:visited{
+    color: red;
+}
+a:hover{
+    color: blue;
+}
+a:active{
+    color: purple;
+}
+ul.myList{
+    list-style-type: circle;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: blue;
+}
+table{
+    margin: 10px;
+    font-size: 20px;
+    color: blue;
+    border-collapse: collapse;
+    outline-style: ridge;
+}
+th, td{
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+}
+tr:nth-child(even){
+    background-color: lightblue;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Homework 5 Temperature Converter</title>
+        <script>
+            function convert(){
+                if(document.getElementById("celsius_temp").value == ""){
+                    var f_num = document.getElementById("fahrenheit_temp");
+                    Number(f_num);
+                    var c_formula = (f_num.value - 32)*(5/9);
+                    document.getElementById("celsius_temp").value = c_formula;
+                }
+                else{                
+                    var c_num = document.getElementById("celsius_temp");
+                    Number(c_num);
+                    var f_formula = (c_num.value*(9/5)) + 32;
+                    document.getElementById("fahrenheit_temp").value = f_formula;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Fahrenheit to Celsius Converter</h1>
+        <input id = "fahrenheit_temp">
+        <input id = "celsius_temp">
+        <button onclick="convert()">Convert</button>
+    </body>
+</html>

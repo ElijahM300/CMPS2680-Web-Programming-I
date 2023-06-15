@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Homework 6 Arrays and Loops</title>
+    </head>
+    <body>
+        <h1>Homework 6 Arrays and Loops</h1>
+        <p id = "elements" style = "font-size: 20px"></p>
+        <script>
+            var arr = [];
+            var num = "";
+            while(num != "stop"){
+                num = prompt("Enter a number or type stop:");
+                var i = Number(num);
+                if(!Number.isNaN(i)){
+                    arr.push(i);
+                }
+            }
+            arr.sort(function(a, b){
+                return a - b
+            });
+            document.getElementById("elements").innerHTML = "Array of elements: " + arr;
+        </script>
+    </body>
+</html>
